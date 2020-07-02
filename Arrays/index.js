@@ -39,8 +39,8 @@ pushTrue([1,2,3]) ===> [1, 2, 3, 'last element']
 */
 
 function pushString(arr) {
-  // CODE HERE
-  console.log(arr);
+  arr[arr.length] = 'last element'
+  return arr;
 }
 
 /*
@@ -58,7 +58,8 @@ mutateZeroElem([1,2,3]) ===> [1, 2, 3, true]
 */
 
 function push(array, value) {
-  // CODE HERE
+  array[array.length] = value;
+  return array
 }
 
 /*
@@ -80,7 +81,9 @@ true
 */
 
 function printElements(array) {
-  // CODE HERE
+  for (i = 0; i < array.length; i++){
+    console.log(array[i])
+  }
 }
 
 /*
@@ -109,7 +112,18 @@ unique([1,2,3,2,3,2]) ===> [1, 2, 3];
 */
 
 function unique(array) {
-  // CODE HERE
+  var finalArr;
+
+  for(var i = 0; i < array.length; i++) {
+    finalArr += array[i]
+    for(var j = 0; j < finalArr.length; j++) {
+      if (finalArr[j] = array[i]){
+        j++
+      }
+      return finalArr
+  
+    }
+  }
 }
 
 /*
