@@ -28,7 +28,9 @@ CREATE A FUNCTION THAT ACCEPTS ONE ARGUMENT, THE NUMBER OF TIMES IT WILL CONSOLE
 */
 
 function dynamicHelloWorld(num) {
-  // CODE HERE
+  for (i = 0; i < num; i++){
+    console.log('hello world');
+  }
 }
 
 /*
@@ -39,6 +41,9 @@ CREATE A FUNCTION THAT ACCEPTS A STRING AND WILL LOG TO THE CONSOLE EACH CHARACT
 */
 
 function logEachChar(str) {
+  for (i = 0; i < str.length; i++){
+    console.log(str[i])
+  }
   // CODE HERE
 }
 
@@ -54,7 +59,14 @@ e.g. checkIfCharExists('hello', 'l') ===> true
 */
 
 function checkIfCharExists(str, char) {
-  // CODE HERE
+  var status;
+  for (i = 0; i < str.length; i++){
+    if (str[i] == char){
+      status == true
+    }
+  }
+
+  return status
 }
 
 /*
@@ -68,7 +80,9 @@ e.g. indexOf('hello', 'l') ===> 2
 */
 
 function indexOf(str, char) {
-  // CODE HERE
+  for (i=0; i<str.length; i++){
+    
+  }
 }
 
 /*

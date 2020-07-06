@@ -120,10 +120,12 @@ function unique(array) {
       if (finalArr[j] = array[i]){
         j++
       }
-      return finalArr
+      
   
     }
   }
+
+  return finalArr
 }
 
 /*
